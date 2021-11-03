@@ -5,9 +5,9 @@ int KEY_O = 0;
 int KEY_I = 1;
 int KEY_U = 10;
 int KEY_J = 9;
-int KEY_K = 14;
-int KEY_L = 15;
-int KEY_SCOLON = 16;
+int KEY_K = A0;
+int KEY_L = A1;
+int KEY_SCOLON = A2;
 int DELAY = 1000;
 long random_number;
 
