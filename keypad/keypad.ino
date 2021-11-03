@@ -89,7 +89,7 @@ void loop() {
   }
   if (digitalRead(KEY_K) == LOW)
   {
-    Keyboard.print(":fernando:");
+    Keyboard.print(":test_tube: Add a failing test. ");
     delay(DELAY);
     Keyboard.press(KEY_RETURN);
   }
@@ -99,7 +99,7 @@ void loop() {
   }
   if (digitalRead(KEY_L) == LOW)
   {
-    Keyboard.print(":maritza:");
+    Keyboard.print(":white_check_mark: Pass test. ");
     delay(DELAY);
     Keyboard.press(KEY_RETURN);
   }
@@ -109,7 +109,7 @@ void loop() {
   }
   if (digitalRead(KEY_SCOLON) == LOW)
   {
-    Keyboard.print(":xavier:");
+    Keyboard.print(":recycle: Refactor code. ");
     delay(DELAY);
     Keyboard.press(KEY_RETURN);
   }
