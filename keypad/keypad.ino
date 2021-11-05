@@ -37,7 +37,8 @@ void setup() {
 void loop() {
   if (digitalRead(KEY_P) == LOW)
   {
-    Keyboard.print(":grinning:");
+    random_number = random(5);
+    Keyboard.print(people[random_number]);
     delay(DELAY);
     Keyboard.press(KEY_RETURN);
   }
@@ -57,9 +58,8 @@ void loop() {
   }
   if (digitalRead(KEY_I) == LOW)
   {
-    Keyboard.print(":v::skin-tone-5:");
+    Keyboard.print(":test_tube: Add a failing test.");
     delay(DELAY);
-    Keyboard.press(KEY_RETURN);
   }
   if (digitalRead(KEY_I) == HIGH)
   {
@@ -67,7 +67,7 @@ void loop() {
   }
   if (digitalRead(KEY_U) == LOW)
   {
-    Keyboard.print(":raised_hands::skin-tone-5:");
+    Keyboard.print(":grinning:");
     delay(DELAY);
     Keyboard.press(KEY_RETURN);
   }
@@ -77,11 +77,9 @@ void loop() {
   }
   if (digitalRead(KEY_J) == LOW)
   {
-    
-    random_number = random(5);
-    Keyboard.print(people[random_number]);
-    delay(DELAY);
+    Keyboard.print("make tests");
     Keyboard.press(KEY_RETURN);
+    delay(DELAY);
   }
   if (digitalRead(KEY_J) == HIGH)
   {
@@ -89,7 +87,7 @@ void loop() {
   }
   if (digitalRead(KEY_K) == LOW)
   {
-    Keyboard.print(":test_tube: Add a failing test. ");
+    Keyboard.print(":v::skin-tone-5:");
     delay(DELAY);
     Keyboard.press(KEY_RETURN);
   }
@@ -99,9 +97,8 @@ void loop() {
   }
   if (digitalRead(KEY_L) == LOW)
   {
-    Keyboard.print(":white_check_mark: Pass test. ");
+    Keyboard.print(":white_check_mark: Pass test.");
     delay(DELAY);
-    Keyboard.press(KEY_RETURN);
   }
   if (digitalRead(KEY_L) == HIGH)
   {
@@ -109,9 +106,8 @@ void loop() {
   }
   if (digitalRead(KEY_SCOLON) == LOW)
   {
-    Keyboard.print(":recycle: Refactor code. ");
+    Keyboard.print(":recycle: Refactor code.");
     delay(DELAY);
-    Keyboard.press(KEY_RETURN);
   }
   if (digitalRead(KEY_SCOLON) == HIGH)
   {
