@@ -4,6 +4,7 @@ int winner_pin;
 int buzzer_pin = A2;
 int buzzer_time = 100;
 int led_time = 1000;
+int win_time = 500;
 long random_number;
 
 void setup() {
@@ -32,7 +33,7 @@ void setup() {
   digitalWrite(heads_led_pin, LOW);
   digitalWrite(tails_led_pin, LOW);
   digitalWrite(buzzer_pin, HIGH);
-  delay(buzzer_time * 3);
+  delay(win_time);
   digitalWrite(buzzer_pin, LOW);
 
   random_number = random(2);
@@ -45,8 +46,8 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(winner_pin, LOW);
-  delay(led_time);
   digitalWrite(winner_pin, HIGH);
-  delay(led_time);
+  delay(win_time);
+  digitalWrite(winner_pin, LOW);
+  delay(win_time);
 }
