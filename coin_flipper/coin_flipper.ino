@@ -36,9 +36,9 @@ void setup() {
   delay(win_time);
   digitalWrite(buzzer_pin, LOW);
 
-  random_number = random(2);
+  random_number = random(100);
 
-  if (random_number == 0) {
+  if (random_number < 50) {
     winner_pin = heads_led_pin;
   } else {
     winner_pin = tails_led_pin;
