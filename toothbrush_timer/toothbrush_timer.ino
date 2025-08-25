@@ -11,28 +11,28 @@ void setup() {
   pinMode(yellow_led, OUTPUT);
   pinMode(red_led, OUTPUT);
 
-  for (int i = 0; i < 15; i++) {
+  for (int i = 0; i < 30; i++) {
     digitalWrite(green_led, HIGH);
     delay(half_second);
     digitalWrite(green_led, LOW);
     delay(half_second);
   }
 
-  for (int i = 0; i < 30; i++) {
+  for (int i = 0; i < 60; i++) {
     digitalWrite(green_led, HIGH);
     delay(quarter_second);
     digitalWrite(green_led, LOW);
     delay(quarter_second);
   }
 
-  for (int i = 0; i < 30; i++) {
+  for (int i = 0; i < 60; i++) {
     digitalWrite(yellow_led, HIGH);
     delay(quarter_second);
     digitalWrite(yellow_led, LOW);
     delay(quarter_second);
   }
 
-  for (int i = 0; i < 60; i++) {
+  for (int i = 0; i < 120; i++) {
     digitalWrite(yellow_led, HIGH);
     delay(eighth_second);
     digitalWrite(yellow_led, LOW);
